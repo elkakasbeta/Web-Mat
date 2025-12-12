@@ -1,0 +1,13 @@
+.activo {
+  color: green;
+  font-weight: bold;
+}
+
+.no-activo {
+  color: red;
+}
+
+h2 {
+  margin-top: 20px;
+  color: #333;
+}

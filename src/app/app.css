@@ -1,0 +1,112 @@
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+h2 {
+  font-weight: 700;
+  color: #222;
+}
+
+.navbar {
+  padding: 12px 20px;
+}
+
+.navbar-brand {
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  transition: 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #0d6efd !important;
+  transform: translateY(-2px);
+}
+
+.carousel-item img {
+  filter: brightness(85%);
+}
+
+.carousel-caption h3 {
+  font-weight: 800;
+  text-shadow: 2px 2px 6px #000;
+}
+
+.carousel-caption p {
+  font-size: 1.1rem;
+  text-shadow: 1px 1px 4px #000;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  font-weight: 600;
+  color: #0d6efd;
+}
+
+.card-body ul li {
+  margin-bottom: 6px;
+}
+
+#binding {
+  background: linear-gradient(180deg, #eef2f3, #ffffff);
+}
+
+#binding .card {
+  background: white;
+  border-left: 5px solid #0d6efd;
+}
+
+#binding .card:hover {
+  border-left: 5px solid #6610f2;
+}
+
+#demo .alert {
+  font-size: 1.2rem;
+  letter-spacing: 0.3px;
+}
+
+#demo app-comp {
+  display: block;
+  margin-top: 20px;
+}
+footer {
+  margin-top: 40px;
+  background-color: #111;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 280px !important;
+  }
+
+  .carousel-caption h3 {
+    font-size: 1.4rem;
+  }
+}

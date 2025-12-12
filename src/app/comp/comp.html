@@ -1,0 +1,50 @@
+<h2>Interpolation</h2>
+<p>Hola {{ nombre }}</p>
+
+<hr>
+
+<h2>Property Binding</h2>
+<img src="https://raw.githubusercontent.com/remojansen/logo.ts/master/ts.png" width="120">
+
+<hr>
+
+<h2>Event Binding</h2>
+<button (click)="sumar()">Sumar</button>
+<p>Contador: {{ cont }}</p>
+
+<hr>
+
+<h2>Two-way Binding</h2>
+<input [(ngModel)]="texto" placeholder="Escribe aquí">
+<p>Texto ingresado: {{ texto }}</p>
+
+<hr>
+
+<h2>*ngIf</h2>
+<p *ngIf="mostrar">Este texto se muestra</p>
+<button (click)="mostrar = !mostrar">Mostrar/Ocultar</button>
+
+<hr>
+
+<h2>*ngFor</h2>
+<ul>
+  <li *ngFor="let u of usuarios">
+    {{ u }}
+  </li>
+</ul>
+
+<hr>
+
+<h2>[ngClass]</h2>
+<p [ngClass]="activo ? 'activo' : 'no-activo'">
+  Estado del usuario
+</p>
+<button (click)="activo = !activo">Cambiar estado</button>
+
+<hr>
+
+<h2>[ngStyle]</h2>
+<p [ngStyle]="{ 'font-size.px': tamano }">
+  Texto con tamaño dinámico
+</p>
+<button (click)="tamano = tamano + 2">Aumentar tamaño</button>
